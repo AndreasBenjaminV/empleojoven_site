@@ -8,6 +8,7 @@ class Turn(models.Model):
     taken_by = models.TextField()
 
 class Day(models.Model):
+    id = models.IntegerField(primary_key=True)
     total_turns = models.IntegerField()
     disable_turns = models.IntegerField(default=False)
     taken_turns = models.IntegerField()
