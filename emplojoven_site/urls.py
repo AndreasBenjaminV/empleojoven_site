@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from turns.views import post_list
+from turns.views import post_turns
 
 urlpatterns = [
     url(r'', include('turns.urls')),
